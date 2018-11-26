@@ -1,0 +1,14 @@
+<div>
+  <input type="text"[(ngModel)]="todo.tarea"><!--hacemos referencia al todo.component.ts-->
+  <button (click)="addTodo()">Crear Tarea</button><!--Cuando hacemos click llama al método addTodo-->
+</div>
+
+<div>
+  <ul>
+     <li *ngFor="let todo of todos"><!--crea la variable todo y mete los elementos del array todos en ella.-->
+      {{todo.tarea}}
+
+    
+     </li>
+  </ul>
+</div>
